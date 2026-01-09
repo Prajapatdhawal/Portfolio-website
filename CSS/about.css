@@ -1,0 +1,342 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.heading{
+    font-size: 2.7rem;
+    text-align: center;
+    font-weight: 600;
+    line-height: 1.25;
+    color: #454D51;
+}
+
+/* for hero section */
+.about-hero{
+    display: flex;
+    margin: 5rem auto;
+    align-items: center;
+    justify-content: space-around;
+    gap: 4rem;
+    max-width: 1100px;
+}
+
+.left-about-hero img{
+    width: 18rem;
+    border-radius: 1rem;
+    display: block;
+}
+.right-about-hero p{
+    text-align: justify;
+    max-width: 500px;
+    color: #454D51;
+}
+
+/* for skill section */
+.skills-sec{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+    background-color: #0f172a;
+    padding: 4.5rem 0 ;
+}
+.skills-sec h3, h4{
+    color: aliceblue;
+    font-weight: 500;
+}
+.skill-image{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 6rem;
+    padding-bottom: 2rem;
+}
+.skill-item{
+    display: flex;
+    flex-direction: column;
+    justify-items: center;
+}
+.skill-item img{
+    width: 3rem;
+    height: 3rem;
+    object-fit: contain;
+}
+.skill-item span{   
+    margin-top: 0.6rem;
+    font-size: 0.875rem;
+    opacity: 0.9;
+    text-align: center;
+    color: aliceblue;
+}
+
+/* for education section */
+
+.education-journey{
+    padding-top: 5rem;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: #f7f9fc;
+}
+.education-journey h2{
+    margin-bottom: 2.5rem;
+}
+.timeline-item{
+    position: relative;
+    text-align: justify;
+    max-width: 500px;
+    padding-left: 2.5rem;
+    padding-bottom: 2rem;
+    border-left: 2px solid rgba(0, 0, 0, 0.1);
+}
+.timeline-item::before{
+    content: "";
+    position: absolute;
+    left: -7px;
+    top: 4px;
+    width: 0.625rem;
+    height: 0.625rem;
+    background-color: #0F90E6;
+    border-radius: 35%;
+}
+.timeline-content{
+    border: 2px solid white;
+    border-radius: 5px;
+    padding: 2rem;
+    box-shadow: 0  6px 20px #6b72801b;
+    transition: box-shadow 0.3s ease;
+}
+.timeline-content:hover{
+    box-shadow: 0 4px 8px #454d5156;
+}
+.year{
+    color: #6B7280;
+    font-size: 0.875rem;
+}
+.timeline-content h3{
+    color: #1F2937;
+}
+.timeline-content p{
+    color: #4b5563;
+    padding-top: 0.5rem;
+}
+
+/* for project section  */
+.project-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.project-title{
+    padding: 2rem;
+    text-align: center;
+}
+.project-title p{
+    padding-top: 1rem;
+    color: #454D51;
+}
+.project{
+    display: flex;
+    justify-content: space-between;
+    column-gap: 6rem;
+    margin: 0 4rem;
+}
+.project-card{
+    margin: 0 2rem;
+    margin-top: 2rem;
+    border-radius: 14px;
+    background-color: #ffffff;
+    width: 15rem;
+    height: 15rem;
+    box-shadow: 0 4px 8px #6b728051;
+    transition: transform 0.3s ease;
+}
+.project-card:hover{
+    transform: translateY(-6px);
+}
+.project-card a{
+    text-decoration: none;
+}
+.project-card h3{
+    font-size: 1.2rem;
+    text-align: center;
+    padding: 1rem 0;
+    color: #4b5563;
+}
+.project-card p{
+    font-size: 0.9rem;
+    padding: 0 1rem;
+    text-align: justify;
+    color: #6B7280;
+    padding-bottom: 1rem;
+}
+.project-card span{
+    font-size: 1rem;
+    padding-left: 1rem;
+    padding-bottom: 1rem;
+    color: #454D51;
+}
+
+.project-link{
+    margin-top: 1.5rem;
+    margin-left: 1rem;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    /* padding: 0.6rem 0.4rem; */
+    border-radius: 0.625rem;
+    background-color: #1F2937;
+    width: 10rem;
+    height: 2rem;
+    transition: box-shadow 0.3s ease;
+}
+.project-link:hover{
+    box-shadow: 0 4px 8px #0f90e66c;
+}
+.project-link span{
+    padding-top: 1rem;
+    color: #fff;
+    
+}
+
+/* for call to action section */
+.cta{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    background-color: #1a1e28;
+    padding: 4rem 2rem;
+}
+.cta-heading{
+    padding-top: 6rem;
+    color: #eeeff0;
+    padding-bottom: 2rem;
+}
+.cta-p{
+    color: #a1a7b1;
+    text-align: center;
+    padding-bottom: 2rem;
+}
+.cta-button{
+    margin-bottom: 8rem;
+}
+.cta-1{
+    display: inline-block;
+    background-color: #2b4780;
+    color: #f1eff0;
+    text-decoration: none;
+    border-radius: 0.625rem;
+    padding: 0.625rem 3rem;
+    margin-right: 1rem;
+    transition: background-color 0.2s ease, transform 0.2s ease;
+}
+.cta-1:hover{
+    background-color: #1e40af;
+    transform: translateY(-2px);
+}
+.cta-2{
+    border: 1px solid #505969;
+    padding: 0.625rem 1rem;
+    border-radius: 0.625rem;
+    text-decoration: none;
+    color: #f1eff0;
+    transition: background-color 0.3s ease border-color 0.3s ease;
+}
+.cta-2:hover{
+    background-color: rgba(255, 255, 255,0.08);
+    border-color: rgba(255, 255, 255, 0.6);
+}
+
+
+/* media query for mobile preview */
+
+@media (max-width: 768px){
+    .heading{
+        font-size: 1.5rem;
+        margin: 3rem auto;
+    }
+
+    .about-hero{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-about-hero img{
+        width: 8rem;
+    }
+    
+    .right-about-hero p{
+        margin: 0 2rem;
+        font-size: 0.99rem;
+        color: #454D51;
+    }
+
+    /* for skill section  */
+    .skills-sec{
+        padding: 2rem 0;
+    }
+    .skill-image{
+        display: grid;
+        grid-template-columns: repeat(2, 2fr);
+        row-gap: 2rem;
+    }
+
+    /* for Education  section*/
+    .education-journey{
+        padding-top: 2rem;
+        display: flex;
+        flex-direction: column;
+    }
+    .education-journey h2{
+        text-align: center;
+    }
+    .timeline-item{
+        left: 2rem;
+        padding-right: 1rem;
+    }
+
+    .timeline-content{
+        padding-left: 1rem;
+        border: none;
+        /* box-shadow: none; */
+    }
+    
+    .timeline-content h3{
+        font-size: 1rem;
+        font-weight: 500;
+    }
+    .year{
+        font-size: 0.7rem;
+    }
+    .timeline-content p{
+        font-size: .8rem;
+        padding-right: 1rem;
+    }
+
+
+    /* for project section */
+
+    .project{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .project-card:hover{
+        transform: none;
+    }
+    .cta-1:hover{
+        transform: none;
+    }
+
+    .cta-button{
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        row-gap: 2rem;
+    }
+
+}

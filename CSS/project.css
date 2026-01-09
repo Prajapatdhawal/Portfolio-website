@@ -1,0 +1,301 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.project-page{
+    display: flex;
+    /* justify-content: center; */
+    /* align-self: center; */
+    margin: 5rem 12rem;
+    border-radius: 40px;
+    width: 900px;
+    height: 500px;
+    background-color: #fff;
+    box-shadow: 0 10px 30px #B7C2D2;
+}
+.left-project{
+    display: flex;
+    flex-direction: column;
+}
+
+.project-heading{
+    padding: 2rem 3rem;
+    border-top-left-radius: 40px;
+    background-color: #EFF1F5;
+}
+.project-heading h1{
+    color: #242F3B;
+    font-size: 2.5rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+.project-heading p{
+    color: #3A3C44;
+}
+
+.project-info{
+    background-color: #F5F6FA;
+    padding: 2rem 3rem;
+}
+
+.project-info h4{
+    color: #41464C;
+    font-weight: 500;
+    margin-bottom: 0.725rem;
+}
+.project-info h2{
+    color: #222E3A;
+    margin-bottom: 0.725rem;
+}
+.project-info p{
+    color: #222E3A;
+}
+
+.tech{
+    display: flex;
+    padding: 1rem 0;
+    justify-content: space-between;
+    column-gap: 0.5rem;
+}
+.tech p{
+    border: 1px solid #DDE1E7;
+    background-color: #E9ECF2;
+    color: #222e3a;
+    padding: 0.4rem 0.625rem;
+    border-radius: 1.2rem;
+    font-size: 0.875rem;
+    text-align: center;
+}
+.code-link{
+    padding-top: .5rem;
+}
+.project-link{
+    background-color: #5188C2;
+    color: #FDFEFE;
+    text-decoration: none;
+    display: inline-block;
+    padding: 0.625rem 0.875rem;
+    border-radius: 2rem;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease, 
+                box-shadow 0.3s ease;
+}
+.project-link:hover{
+    background-color: #3d93ef;
+    transform: translateY(-5px);
+    box-shadow: 0 4px 8px #41464C;
+}
+.project-link-1{
+    margin-left: 2rem;
+    text-decoration: none;
+    background-color: #4C5865;
+    color: #FEFEFE;
+    display: inline-block;
+    padding: 0.625rem 0.875rem;
+    border-radius: 2rem;
+    transition: transform 0.3s ease,
+                background-color 0.3s ease,
+                box-shadow 0.3s ease;
+}
+
+.project-link-1:hover{
+    transform: translateY(-5px);
+    background-color: #4c586534;
+    color: #151719;
+    border: 1px solid #151719;
+    box-shadow: 0 4px 8px #3d93ef;
+}
+
+.right-project{
+    background-color: #E6EAF1;
+    border-bottom-right-radius: 40px;
+    border-top-right-radius: 40px;
+}
+.right-project img{
+    width: 500px;
+    height: 450px;
+    /* border-bottom-right-radius: 50px; */
+    border-top-right-radius: 40px;
+}
+
+/* for second project */
+.right-project-1{
+    background-color: #E6EAF1;
+    border-bottom-left-radius: 40px;
+    border-top-left-radius: 40px;
+    border-bottom-right-radius: 0;
+}
+.right-project-1 img{
+    width: 500px;
+    height: 450px;
+    border-top-left-radius: 40px;
+    border-top-right-radius: 0;
+
+}
+.left-project-1 .project-heading{
+    border-top-right-radius: 40px;
+    border-top-left-radius: 0;
+}
+
+.tech-2{
+    display: flex;
+    justify-content: flex-start;
+}
+.tech-2 p{
+    margin: 0 0.775rem;
+}
+
+  /* for skill and tools section */
+
+    .tools-section{
+        padding: 4rem 2rem; 
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #D0DCEA;
+    }
+    
+    .tools-section h1{
+        color: #303A46;
+        font-size: 2.5rem;
+        font-weight: 500;
+    }
+    .tools-section p{
+        margin: 1rem 0;
+        color: #303D4C;
+    }
+
+    .tool-card{
+        display: flex;
+        margin-top: 2rem;
+        column-gap: 6rem;
+    }
+
+    .tools{
+        background-color: #FEFEFE;
+        padding: 1rem 1.5rem;
+        border-radius: 40px;
+        width: 280px;
+        box-shadow: 0 4px 8px #3a3c4485;
+        transition: transform 0.3s ease box-shadow 0.3s ease;
+    }
+    .tools:hover{
+        transform: translateY(-5px);
+        box-shadow: 0 4px 8px #222e3a;
+    }
+    .tools-use h2{
+        font-weight:400;
+        color: #23303E;
+        text-align: center;
+        padding-bottom: 1rem;
+    }
+    .tools-use span{
+        color: #3d93ef;
+        font-size: 2rem;
+    }
+    hr{
+        height: 3px;
+        background-color: #BDC1CB;
+    }
+    .skill-tool{
+        padding: 1rem 0;
+    }
+    .skill-tool h4{
+        font-weight: 500;
+        color: #040713;
+
+    }
+
+@media (max-width: 768px){
+     .project-page{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 300px;
+        height: auto;
+        margin: 4rem 2.6rem;
+        border-radius: 40px;
+        background-color: transparent;
+        
+    }
+
+    .left-project{
+        order: 2;
+        line-height: 1rem;
+        background-color: #FFF;
+        border-bottom-left-radius: 40px;
+        border-bottom-right-radius: 40px;
+    }
+    .right-project{
+        order: 1;
+    }
+    .project-heading{
+        padding-top: 0.675rem;
+        padding: 0 0.8rem;
+        text-align: justify;
+    }
+    .project-heading h1{
+        font-size: 1.3rem;
+    }
+    .project-heading p{
+        font-size: 0.875rem;
+    }
+
+    .project-info{
+        padding: 1rem;
+    }
+    
+    .project-heading,
+    .project-info,
+    .right-project,
+    .right-project-1{
+        border-radius: 0;
+        background-color: transparent;
+    }
+    
+    .project-link:hover,
+    .project-link-1:hover{
+        transform: none;
+        box-shadow: none;
+    }
+    
+
+    .tech p{
+        font-size: 0.6rem;
+
+    }
+
+    .code-link{
+        font-size: 0.8rem;
+        text-align: center;
+    }
+
+    .right-project img,
+    .right-project-1 img{
+        border-top-right-radius:  40px;
+        border-top-left-radius: 40px;
+        width: 300px;
+        height: auto;
+    }
+
+    .tool-card{
+        display: flex;
+        flex-direction: column;
+        row-gap: 3rem;
+    }
+    .tools-use{
+        text-align: center;
+        padding-top: 1rem;
+    }
+    .tools{
+        box-shadow: 0 4px 8px #222E3A;
+    }
+    .tools:hover{
+        transform: none;
+        box-shadow: none;
+    }
+
+
+}

@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/style.css">
+    <link rel="stylesheet" href="../CSS/contact.css">
+
+    <!-- for google font inter -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;800;900&display=swap" rel="stylesheet">
+    <title>Contact</title>
+</head>
+<body>
+
+    <div class="top">
+        <a href="#top" class="back-to-top" aria-label="back to top">
+            <img src="https://img.icons8.com/fluency/48/circled-up-2.png" alt="back to top">
+        </a>
+    </div>
+
+    <!-- navbar  -->
+    <header class="container">
+        <nav class="navbar">
+            <div class="logo">
+                <a href="home.html">
+                    <img src="../photos/logo.png" alt="logo">
+                </a>
+            
+            </div>
+
+            <div class="page-link">
+                <input type="checkbox" class="nav-toggle" id="nav-toggle">
+                <label for="nav-toggle" class="hamburger">
+                    &#9776;    <!--☰ icon --> 
+                </label>
+                <ul class="link-list">
+                    <li><a href="home.html"><b>Home</b></a></li>
+                    <li><a href="about.html"><b>About</b></a></li>
+                    <!-- <li><a href="#"><b>Skill</b></a></li> -->
+                    <li><a href="project.html"><b>Projects</b></a></li>
+                    <li><a href="contact.html"><b>Contact</b></a></li>
+<!-- call to action -->
+                    <li class="action-to-call">
+                        <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhawalkumar718@gmail.com" target="_blank">Let's Talk</a>
+                    </li>
+                </ul>                
+            </div>
+
+            <!-- call to action for desktop view -->
+            <div class="call-action">
+                <li class="action-call">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhawalkumar718@gmail.com" target="_blank">Let's Talk</a>
+                </li>
+            </div>
+
+        </nav>
+    </header>
+
+    <!-- for contact form -->
+     <section class="contact-section">
+        <div class="con-head">
+            <h1>Love to hear from you,<br>Get in touch <span><img src="https://img.icons8.com/emoji/48/waving-hand-emoji.png" alt="" class="waving-hand"></span></h1>
+            <p>Have a project, opportunity, or question? Feel free to drop a message.</p>
+        </div>
+
+        <form class="main">
+            <div class="contact-info">
+                <div class="top-1">
+                    <label for="name" class="text-area">Your name</label>
+                    <input type="text" name="name" class="area" id="name" placeholder="your full name" required>
+                </div>
+                <div class="top-2">
+                    <label for="email" class="text-area">Your email</label>
+                    <input type="email" id="email" name="email" class="area" placeholder="yourname@email.com" required>
+                </div>                
+            </div>
+
+            <div class="contact-info-1 contact-info">
+                
+                <div class="top-1">
+                    <label for="reason" class="text-area">Reason for contact</label>
+                    <select name="reason" id="reason" required class="area">
+                        <option value="" disabled selected>Select a reason</option>
+                        <option>Job Opportunity</option>
+                        <option>Internship Opportunity</option>
+                        <option>Freelance Project</option>
+                        <option>Contract Project</option>
+                        <option>Collaboration</option>
+                        <option>General Inquiry</option>
+                    </select>
+                </div>
+
+                <div class="top-1">
+                    <label for="message" class="text-area">Message</label>
+                    <textarea name="message" id="message" rows="6" placeholder="Tell me about your project, opportunity, or query."></textarea>
+                </div>
+            </div>
+
+            <div class="btn-submit">
+                <div class="button">
+                    <button type="submit" class="submit-btn">Send Message ↗</button>
+                    <p>Or reach me directly:</p>
+                </div>
+
+                <div class="direct-link">
+                    <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhawalkumar718@gmail.com#direct-reach-me" target="_blank">
+                        <img src="https://img.icons8.com/fluency/48/secured-letter.png" alt="mail">
+                    </a>
+                    <a href="https://www.linkedin.com/in/dhawal-kumar-08b0a1221/" target="_blank">
+                        <img src="https://img.icons8.com/fluency/48/linkedin.png" alt="linkdin">
+                    </a>
+                    <a href="https://github.com/Prajapatdhawal" target="_blank">
+                        <img src="https://img.icons8.com/external-tal-revivo-bold-tal-revivo/48/228BE6/external-github-community-for-software-building-and-testing-online-logo-bold-tal-revivo.png" alt="Github" style="width: 24px;">
+                    </a>
+                    
+                </div>
+                <p>Open to internships, freelance, and full-time roles.</p>
+            </div>        
+        </form>
+    </section>
+
+    <section class="contact-section-1">
+        <div class="full-body">
+            <div class="cta">
+                <h2>Currently open to opportunities</h2>
+                <p>I'm actively looking for internships, freelance projects, and full-time roles.
+                    If you think we're a good fit, I'd llove to connect.
+                </p>
+                <div class="cta-button">
+                    <a href="project.html" class="bt-1">View My Projects ➜</a>
+                    <a href="../photos/resume.pdf" class="bt-2"> Download Resume</a>
+                </div>
+                <div class="cta-list">
+                    <ul>
+                        <li>Remote-friendly</li>
+                        <li>Open to learning</li>
+                        <li>Clear communication</li>
+                    </ul>
+                </div>
+             </div>
+
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-intro">
+            <p class="footer-name">Dhawal Kumar</p>
+            <p class="footer-role">Frontend Developer | Python Enthusiast</p>
+
+            <ul class="footer-pages">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="project.html">Projects</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </div>
+
+        <div class="footer-link">
+            <h3>Get in touch</h3>
+            <div>
+                <a href="https://www.instagram.com/dhawal_prajapa_t/" target="_blank">
+                <img src="https://img.icons8.com/pulsar-line/48/1A1A1A/instagram-new.png" alt="instagram">
+                </a>
+                <a href="https://github.com/Prajapatdhawal" target="_blank">
+                    <img src="https://img.icons8.com/pulsar-line/48/1A1A1A/github.png" alt="github">
+                </a>
+                <a href="https://mail.google.com/mail/?view=cm&fs=1&to=dhawalkumar718@gmail.com" target="_blank">
+                    <img src="https://img.icons8.com/pulsar-line/48/1A1A1A/mail.png" alt="mail">
+                </a>
+                <a href="https://www.linkedin.com/in/dhawal-kumar-08b0a1221/" target="_blank">
+                    <img src="https://img.icons8.com/pulsar-line/48/1A1A1A/linkedin.png" alt="linkdin">
+                </a>
+                <a href="tel:+917726063318">
+                    <img src="https://img.icons8.com/pulsar-line/48/1A1A1A/apple-phone.png" alt="contact">
+                </a>
+            </div>
+            
+        </div>
+
+        <div class="copy-right">
+            <p>&copy 2026  D venture, made with ❤️</p>
+        </div>
+    </footer>
+</body>
+</html>
